@@ -1,2 +1,2 @@
 # Office365 Powershell
-### scripts and statements for EOL and O365
+### scripts and statements for Exchange Online and Office365
