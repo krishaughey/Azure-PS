@@ -14,13 +14,13 @@ Import-Module MSOnline
 Get-MsolAccountSku
 
 #license to be removed
-$skuId = "CONTOSO:ENTERPRISEPACK"
+$skuId = "<TENANT>:STANDARDPACK"
 
 #add here the group with license assignment to be processed
 #$LicensedGroup = "Office365E3"
 
 #Get the group Object ID
-$groupId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" #(Get-MsolGroup -SearchString $LicensedGroup).ObjectId
+$groupId = "<GROUP ID>" #(Get-MsolGroup -SearchString $LicensedGroup).ObjectId
 
 #Helper functions used by the script
 
