@@ -1,7 +1,6 @@
 # Get All O365 Distribution Groups with Membership
 ##### author: Kristopher F. Haughey
 
-
 $Groups = Get-DistributionGroup -ResultSize Unlimited
 $Groups | ForEach-Object {
 $group = $_.Name

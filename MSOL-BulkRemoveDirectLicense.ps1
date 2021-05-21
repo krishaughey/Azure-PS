@@ -7,20 +7,21 @@
 #>
 
 Import-Module MSOnline
+Connect-MsolService
 #$UserCredential = Get-Credential
 #Connect-MsolService -Credential $UserCredential
 
 #Get License Sku for the tenant
-Get-MsolAccountSku
+#Get-MsolAccountSku
 
 #license to be removed
-$skuId = "<TENANT>:STANDARDPACK"
+$skuId = Read-Host "Enter the SkuID"
 
 #add here the group with license assignment to be processed
 #$LicensedGroup = "Office365E3"
 
 #Get the group Object ID
-$groupId = "<GROUP ID>" #(Get-MsolGroup -SearchString $LicensedGroup).ObjectId
+$groupId = Read-Host "Enter the ObjectID" #(Get-MsolGroup -SearchString $LicensedGroup).ObjectId
 
 #Helper functions used by the script
 
